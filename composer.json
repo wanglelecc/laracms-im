@@ -1,0 +1,20 @@
+{
+    "name": "wanglelecc/easy",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "wanglelecc",
+            "email": "wanglelecc@gmail.com"
+        }
+    ],
+    "require": {
+        "easyswoole/easyswoole": "2.x-dev",
+        "easyswoole/swoole-ide-helper": "^1.02"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+18-04-18 20:47:09:Error at file[/home/wwwroot/easy/vendor/easyswoole/easyswoole/src/Core/Socket/Dispatcher.php] line[109] message:[#0 /home/wwwroot/easy/vendor/easyswoole/easyswoole/src/Core/Socket/AbstractInterface/Controller.php(88): App\Sock\Controller\TcpTest->actionNotFound(NULL)
+#1 /home/wwwroot/easy/vendor/easyswoole/easyswoole/src/Core/Socket/AbstractInterface/Controller.php(26): EasySwoole\Core\Socket\AbstractInterface\Controller->__hook(NULL)
+#2 /home/wwwroot/easy/vendor/easyswoole/easyswoole/src/Core/Socket/AbstractInterface/TcpController.php(21): EasySwoole\Core\Socket\AbstractInterface\Controller->__construct(Object(EasySwoole\Core\Socket\Common\CommandBean), Object(EasySwoole\Core\Component\Spl\SplStream))
+#3 /home/wwwroot/easy/vendor/easyswoole/easyswoole/src/Core/Socket/Dispatcher.php(101): EasySwoole\Core\Socket\AbstractInterface\TcpController->__construct(Object(EasySwoole\Core\Socket\Client\Tcp), Object(EasySwoole\Core\Socket\Common\CommandBean), Object(EasySwoole\Core\Component\Spl\SplStream))
+#4 /home/wwwroot/easy/vendor/easyswoole/easyswoole/src/Core/Swoole/EventHelper.php(107): EasySwoole\Core\Socket\Dispatcher->dispatch(1, 'test\r\n', 1, 3)
+#5 [internal function]: EasySwoole\Core\Swoole\EventHelper::EasySwoole\Core\Swoole\{closure}(Object(swoole_http_server), 1, 3, 'test\r\n')
+#6 /home/wwwroot/easy/vendor/easyswoole/easyswoole/src/Core/Component/Invoker.php(58): call_user_func_array(Object(Closure), Array)
+#7 /home/wwwroot/easy/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(137): EasySwoole\Core\Component\Invoker::callUserFuncArray(Object(Closure), Array)
+#8 [internal function]: EasySwoole\Core\Swoole\ServerManager->EasySwoole\Core\Swoole\{closure}(Object(swoole_http_server), 1, 3, 'test\r\n')
+#9 /home/wwwroot/easy/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(67): swoole_http_server->start()
+#10 /home/wwwroot/easy/vendor/easyswoole/easyswoole/src/Core/Core.php(45): EasySwoole\Core\Swoole\ServerManager->start()
+#11 /home/wwwroot/easy/vendor/easyswoole/easyswoole/bin/easyswoole(320): EasySwoole\Core\Core->run()
+#12 /home/wwwroot/easy/vendor/easyswoole/easyswoole/bin/easyswoole(22): serverStart(Array)
+#13 /home/wwwroot/easy/vendor/easyswoole/easyswoole/bin/easyswoole(456): commandHandler()
+#14 /home/wwwroot/easy/easyswoole(2): require('/home/wwwroot/e...')
+#15 {main}]
+18-04-19 08:20:32:Error at file[/home/wwwroot/easy/EasySwooleEvent.php] line[44] message:[Uncaught ArgumentCountError: Too few arguments to function EasySwoole\EasySwooleEvent::EasySwoole\{closure}(), 3 passed and exactly 4 expected in /home/wwwroot/easy/EasySwooleEvent.php:44
+Stack trace:
+#0 [internal function]: EasySwoole\EasySwooleEvent::EasySwoole\{closure}(Object(swoole_http_server), 1, -1)
+#1 /home/wwwroot/easy/vendor/easyswoole/easyswoole/src/Core/Component/Invoker.php(58): call_user_func_array(Object(Closure), Array)
+#2 /home/wwwroot/easy/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(87): EasySwoole\Core\Component\Invoker::callUserFuncArray(Object(Closure), Array)
+#3 [internal function]: EasySwoole\Core\Swoole\ServerManager->EasySwoole\Core\Swoole\{closure}(Object(swoole_http_server), 1, -1)
+#4 /home/wwwroot/easy/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(67): swoole_http_server->start()
+#5 /home/wwwroot/easy/vendor/easyswoole/easyswoole/src/Core/Core.php(45): EasySwoole\Core\Swoole\ServerManager->start()
+#6 /home/wwwroot/easy/vendor/easyswoole/easyswoo]

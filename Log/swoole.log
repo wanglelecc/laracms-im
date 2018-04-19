@@ -1,0 +1,12 @@
+[2018-04-19 08:14:40 ^10206.9]	NOTICE	swFactoryProcess_finish (ERROR 1005): connection[fd=1] does not exists.
+[2018-04-19 08:18:58 ^10325.9]	NOTICE	swFactoryProcess_finish (ERROR 1005): connection[fd=1] does not exists.
+[2018-04-19 08:20:32 *10394.7]	ERROR	zm_deactivate_swoole (ERROR 503): Fatal error: Uncaught ArgumentCountError: Too few arguments to function EasySwoole\EasySwooleEvent::EasySwoole\{closure}(), 3 passed and exactly 4 expected in /home/wwwroot/easy/EasySwooleEvent.php:44
+Stack trace:
+#0 [internal function]: EasySwoole\EasySwooleEvent::EasySwoole\{closure}(Object(swoole_http_server), 1, -1)
+#1 /home/wwwroot/easy/vendor/easyswoole/easyswoole/src/Core/Component/Invoker.php(58): call_user_func_array(Object(Closure), Array)
+#2 /home/wwwroot/easy/v
+[2018-04-19 08:20:32 $10374.0]	WARNING	swManager_check_exit_status: worker#7 abnormal exit, status=255, signal=0
+[2018-04-19 08:20:44 *10401.7]	NOTICE	swFactoryProcess_end (ERROR 1003): The connection[1] is closing.
+[2018-04-19 08:20:59 *10401.7]	NOTICE	swFactoryProcess_end (ERROR 1003): The connection[1] is closing.
+[2018-04-19 08:21:12 *10401.7]	NOTICE	swFactoryProcess_end (ERROR 1003): The connection[1] is closing.
+[2018-04-19 08:26:59 ^10507.10]	NOTICE	swFactoryProcess_finish (ERROR 1005): connection[fd=2] does not exists.
