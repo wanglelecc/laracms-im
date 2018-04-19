@@ -57,6 +57,9 @@ Class EasySwooleEvent implements EventInterface {
         });
 
 
+        EventHelper::registerDefaultOnMessage($register,new \App\Sock\Parser\WebSocket());
+
+
     }
 
     public static function onRequest(Request $request,Response $response): void
